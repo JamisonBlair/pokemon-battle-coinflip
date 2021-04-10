@@ -17,6 +17,7 @@ if pokemon1 == 'Random':
 if pokemon2 == 'Random':
     pokemon2 = pokemon_df['name'].sample().values[0]    
 if pokemon1 != ' ' and pokemon2 != ' ':
+    st.audio('pokebattle_theme.mp3')
     if st.button('BATTLE!'):
         st.header(pokemon1)
         st.image(pokebot.get_pic_path(pokemon1))
