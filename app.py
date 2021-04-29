@@ -34,8 +34,9 @@ if pokemon1 != ' ' and pokemon2 != ' ':
         
         hp1 = np.random.randint(50,101)
         hp2 = np.random.randint(50,101)
+
         hp_dict = {attacker: hp1, defender: hp2}
-	st.write(f'{attacker} has {max(hp_dict[attacker], 0)} hp. {defender} has {max(hp_dict[defender], 0)} hp.\n')
+        st.write(f'{attacker} has {max(hp_dict[attacker], 0)} hp. {defender} has {max(hp_dict[defender], 0)} hp.\n')
         while hp_dict[attacker] > 0:
             time.sleep(3)
             hit_tup = pokebot.attack(attacker, defender)
