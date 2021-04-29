@@ -43,7 +43,7 @@ if pokemon1 != ' ' and pokemon2 != ' ':
                 attacker, defender = defender, attacker
             else:
                 if hit_tup[2] < 30:
-                    st.write(f'{attacker} uses {hit_tup[0]} and hits! {defender} deals {hit_tup[2]} damage!')
+                    st.write(f'{attacker} uses {hit_tup[0]} and hits! {attacker} deals {hit_tup[2]} damage!')
                 else:
                     st.write(f'{attacker} uses {hit_tup[0]}... CRITICAL HIT!!! {attacker} deals {hit_tup[2]} damage!')
                 hp_dict[defender] -= hit_tup[2]
